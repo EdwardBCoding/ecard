@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Tiny Reset */
+
+*{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --main-font: 'Roboto Condensed', sans-serif;
+    --main-color: rgb(79, 7, 35);
+
+}
+
+title{
+    display: none;
+}
+
+/* functional classes */
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container */
+
+.container{
+    background: #232946;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    
+    overflow-x:hidden
+}
+
+.section-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+    transform: translateY(-5rem);
+    max-width:100%;
+}
+
+.image{
+    width:8rem;
+    height:8rem;
+    border-radius:100%;
+    box-shadow:0 0 0 3px rgba(255,255,255,.8),0 4px 5px rgba(107,5,0,.6),0 0 40px 40px rgba(255,255,255,.25);
+    background-image:url(selfie2.jpg);
+    background-size:contain;
+    position:absolute;
+    z-index:1;
+}
+
+/* card */
+
+.card{
+    flex-direction: column;
+    width: 20rem;
+    height: 18rem;
+    border-radius: 1rem;
+    background-color: #121629;
+}
+
+/* text */
+
+.section-info{
+    text-align: center;
+    color: #fffffe;
+    font-family: var(--main-font);
+    transform: translateY(-3rem);
+    font-size: 1.5rem;
+}
+
+
